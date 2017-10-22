@@ -1,0 +1,10 @@
+E:\Visual\Form1\Form1\bin\Debug\Form1.exe.config
+E:\Visual\Form1\Form1\bin\Debug\Form1.exe
+E:\Visual\Form1\Form1\bin\Debug\Form1.pdb
+E:\Visual\Form1\Form1\obj\Debug\Login.csprojResolveAssemblyReference.cache
+E:\Visual\Form1\Form1\obj\Debug\Form1.Login.resources
+E:\Visual\Form1\Form1\obj\Debug\Form1.Properties.Resources.resources
+E:\Visual\Form1\Form1\obj\Debug\Login.csproj.GenerateResource.Cache
+E:\Visual\Form1\Form1\obj\Debug\Login.csproj.CoreCompileInputs.cache
+E:\Visual\Form1\Form1\obj\Debug\Form1.exe
+E:\Visual\Form1\Form1\obj\Debug\Form1.pdb
