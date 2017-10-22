@@ -163,45 +163,66 @@ namespace Form1
         */
         private void dgv_nhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int chiso = dgv_nhanvien.CurrentRow.Index;
-            txt_manv.Text = dgv_nhanvien[0, chiso].Value.ToString();
-            txt_hoten.Text = dgv_nhanvien[1, chiso].Value.ToString();
-            txt_socmnd.Text = dgv_nhanvien[2, chiso].Value.ToString();
-            txt_namsinh.Text = dgv_nhanvien[3, chiso].Value.ToString();
-           // từ datagripview đưa lên radiobutton
-            if (dgv_nhanvien[5, chiso].Value.ToString() == "Nam")
+            try
             {
-                rbt_nam.Checked = true;
-                //MessageBox.Show(dgv_nhanvien[4, chiso].Value.ToString());
-            }
-            else
-                
-                {
-                    rbt_nu.Checked = true;
-                }
-          /*  string Gender = "";
-            if (dgv_nhanvien.SelectedRows.Count > 0)
-            {
-                Gender = dgv_nhanvien.SelectedRows[0].Cells["phai"].Value.ToString();
-                if (Gender == "Nam")
+                int chiso = dgv_nhanvien.CurrentRow.Index;
+                txt_manv.Text = dgv_nhanvien[0, chiso].Value.ToString();
+                txt_hoten.Text = dgv_nhanvien[1, chiso].Value.ToString();
+                txt_socmnd.Text = dgv_nhanvien[2, chiso].Value.ToString();
+                txt_namsinh.Text = dgv_nhanvien[3, chiso].Value.ToString();
+                // từ datagripview đưa lên radiobutton
+                if (dgv_nhanvien[5, chiso].Value.ToString() == "Nam")
                 {
                     rbt_nam.Checked = true;
+                    //MessageBox.Show(dgv_nhanvien[4, chiso].Value.ToString());
                 }
                 else
                 {
                     rbt_nu.Checked = true;
                 }
-            }*/
-           // txt_sodt.Text = dgv_nhanvien[4, chiso].Value.ToString();
-           // txt_diachi.Text = dgv_nhanvien[5, chiso].Value.ToString();
-            //dtp_ngayvaolam.Format = DateTimePickerFormat.Custom;
-            //dtp_ngayvaolam.CustomFormat = "dd/MM/yyyy";
-           dtp_ngayvaolam.Value = Convert.ToDateTime(dgv_nhanvien[4, chiso].Value);
-          //  DateTime dt = DateTime.ParseExact(dgv_nhanvien.CurrentCell.Value.ToString(), "dd/MM/yyyy",CultureInfo.InvariantCulture);
+                /*  string Gender = "";
+                  if (dgv_nhanvien.SelectedRows.Count > 0)
+                  {
+                      Gender = dgv_nhanvien.SelectedRows[0].Cells["phai"].Value.ToString();
+                      if (Gender == "Nam")
+                      {
+                          rbt_nam.Checked = true;
+                      }
+                      else
+                      {
+                          rbt_nu.Checked = true;
+                      }
+                  }*/
+                // txt_sodt.Text = dgv_nhanvien[4, chiso].Value.ToString();
+                // txt_diachi.Text = dgv_nhanvien[5, chiso].Value.ToString();
+                //dtp_ngayvaolam.Format = DateTimePickerFormat.Custom;
+                //dtp_ngayvaolam.CustomFormat = "dd/MM/yyyy";
+                dtp_ngayvaolam.Value = Convert.ToDateTime(dgv_nhanvien[4, chiso].Value);
 
-         //  dtp_ngayvaolam.Value = Convert.ToDateTime(dgv_nhanvien.Rows[e.RowIndex].Cells[7].Value.ToString("dd/MM/yyyy"));
-            txt_machucvu.Text = dgv_nhanvien[6, chiso].Value.ToString();
-        //   cb_chucvu.Text = dgv_nhanvien[0, chiso].EditedFormattedValue.ToString();
+                if (Convert.ToDateTime(dgv_nhanvien[4, chiso].Value) != null)
+                {
+                    
+                    
+                    dtp_ngayvaolam.Value = Convert.ToDateTime(dgv_nhanvien[4, chiso].Value);
+                }
+                else
+                {
+                    //DA = DateTime.Today();
+                    dtp_ngayvaolam.Value = Convert.ToDateTime("0/0/0");
+                }
+                //  DateTime dt = DateTime.ParseExact(dgv_nhanvien.CurrentCell.Value.ToString(), "dd/MM/yyyy",CultureInfo.InvariantCulture);
+
+                //  dtp_ngayvaolam.Value = Convert.ToDateTime(dgv_nhanvien.Rows[e.RowIndex].Cells[7].Value.ToString("dd/MM/yyyy"));
+                txt_machucvu.Text = dgv_nhanvien[6, chiso].Value.ToString();
+                //   cb_chucvu.Text = dgv_nhanvien[0, chiso].EditedFormattedValue.ToString();
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            
+            
         }
         string phai = null;
         string image ="";
