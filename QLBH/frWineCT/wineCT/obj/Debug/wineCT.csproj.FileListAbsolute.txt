@@ -21,3 +21,6 @@ D:\Môn học\New folder\frWineCT\wineCT\obj\Debug\Form1.Properties.Resources.re
 D:\Môn học\New folder\frWineCT\wineCT\obj\Debug\wineCT.csproj.GenerateResource.Cache
 D:\Môn học\New folder\frWineCT\wineCT\obj\Debug\Form1.fm_khachhang.resources
 D:\Môn học\New folder\frWineCT\wineCT\obj\Debug\Form1.fm_nhanvien.resources
+D:\CheckOut\trunk\QLBH\frWineCT\wineCT\bin\Debug\Form1.exe.config
+D:\CheckOut\trunk\QLBH\frWineCT\wineCT\obj\Debug\Form1.exe
+D:\CheckOut\trunk\QLBH\frWineCT\wineCT\obj\Debug\Form1.pdb
