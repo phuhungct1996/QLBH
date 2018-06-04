@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLNSBV10", "QLNSBV10\QLNSBV10.csproj", "{1023CFDF-4AC1-4B49-9BB2-92267F2E3910}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTL", "UTL\UTL.csproj", "{AE506D7D-F8A2-4838-A4EA-0E0BBEA0C6A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{180A219B-CDD5-4390-984D-1126DAE43C42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{1023CFDF-4AC1-4B49-9BB2-92267F2E3910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1023CFDF-4AC1-4B49-9BB2-92267F2E3910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1023CFDF-4AC1-4B49-9BB2-92267F2E3910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE506D7D-F8A2-4838-A4EA-0E0BBEA0C6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE506D7D-F8A2-4838-A4EA-0E0BBEA0C6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE506D7D-F8A2-4838-A4EA-0E0BBEA0C6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE506D7D-F8A2-4838-A4EA-0E0BBEA0C6A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180A219B-CDD5-4390-984D-1126DAE43C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180A219B-CDD5-4390-984D-1126DAE43C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180A219B-CDD5-4390-984D-1126DAE43C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180A219B-CDD5-4390-984D-1126DAE43C42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
